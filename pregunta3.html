@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pregunta3</title>
+</head>
+<body>
+    <script>  
+        //3. Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor   
+           
+        let nombre1 = prompt("Ingrese el 1er nombre:");
+        let edad1 = Number(prompt("Edad 1:"));
+    
+        let nombre2 = prompt("Ingrese el 2do nombre:");
+        let edad2 = Number(prompt("Edad 2:"));
+    
+        let nombre3 = prompt("Ingrese el 3er nombre:");
+        let edad3 = Number(prompt("Edad 3:"));
+    
+        let maximo = Math.max(edad1, edad2, edad3);
+    
+        if (maximo == edad1) {
+            document.write("El mayor es: " + nombre1 + " y tiene:" + edad1 + " años");
+        }
+        if (maximo == edad2) {
+            document.write("El mayor es: " + nombre2 + " y tiene:" + edad2 + " años");
+        }
+        if (maximo == edad3) {
+            document.write("El mayor es: " + nombre3 + " y tiene:" + edad3 + " años");
+        }
+    </script>
+</body>
+</html>

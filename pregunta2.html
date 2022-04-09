@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pregunta2</title>
+</head>
+<body>
+    <script>
+        //2. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número 
+        //   deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar” 
+        //   deberá indicarse la suma total de los números introducidos.
+
+        let suma = 0;
+        do {
+            var numeros = prompt("Introduce un numero");
+            if (Number(numeros) == numeros) {
+                numeros = Number(numeros);
+                suma = suma + numeros;
+            }
+            else {
+                if (numeros != undefined) {
+                    alert(numeros + " Debe escribir un valor numerico");
+                }
+            }
+        }while( numeros != undefined );
+        document.write("La suma total es: " + suma);
+    </script>
+</body>
+</html>

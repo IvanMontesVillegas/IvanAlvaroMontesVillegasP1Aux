@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pregunta8</title>
+</head>
+<body>
+    <script>
+        //8. Realiza un script que muestre la serie de fibonacci hasta un número entre 
+        //   1 y 100 pedido por teclado
+
+        let numero = Number(prompt("Introduce un número entre 1 y 100"));
+        if((numero >= 1) && (numero <= 100)) {
+            let x = 0;
+            let y = 1;
+            let z;
+
+            document.write(x + "<br>");
+            for (i = 0; i < (numero-1); i++) {
+                z = x + y;
+                document.write(z + "<br>");
+                y = x;
+                x = z;
+            }
+        }
+        else {
+            alert("Número erróneo");
+        }
+    </script>
+</body>
+</html>

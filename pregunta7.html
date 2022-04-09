@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pregunta7</title>
+</head>
+<body>
+    <script>
+        // 7. Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá 
+        //    mostrar “lat euq aloh”.
+
+        let cadena = prompt("Introduce un Texto:");
+        let numeroCaracteres = cadena.length;
+        let j;
+        let caracter;
+        let salida = "";
+        for (j = 0; j < numeroCaracteres; j++) {
+            caracter = cadena.charAt(j);
+            salida = caracter + salida;
+        }
+        document.write(salida);
+    </script>
+</body>
+</html>
